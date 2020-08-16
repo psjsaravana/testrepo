@@ -26,8 +26,8 @@ const Modal = ({
       />
       {show && (
         <div className={showHideClassName}>
-          <div className={title ? "title-header" : "title"} onClick={handleClose}>
-              {title || null} <CloseOutlined className="icon-btn" />
+          <div className={title ? "title-header" : "title"} >
+              {title || null} <CloseOutlined onClick={handleClose} className="icon-btn" />
           </div>
           <section className="modal-main">{children}</section>
         </div>
