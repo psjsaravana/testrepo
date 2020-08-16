@@ -1,0 +1,27 @@
+.form-label {
+    font-weight: bold;
+    margin: 20px auto 10px;
+}
+
+.form-footer {
+    margin: 20px auto;
+    float: right;
+    .ant-btn-primary {
+        background-color: #383838;
+    }
+    .ant-btn-primary[disabled] {
+        background-color: #a5a5a5;
+        color: white;
+    }
+}
+
+.feedback-title {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    .feedback-content {
+        margin: 10px auto 10px;
+        font-size: 1em;
+        font-weight: 600;
+    }
+}

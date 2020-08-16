@@ -1,0 +1,67 @@
+.modal {
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  min-height: 150px;
+  border-radius: 10px;
+  background: white;
+  z-index: 20;
+  .title-header {
+    background-color: #383838;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .title {
+    padding: 10px;
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .icon-btn {
+    font-size: 1.5em;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.modal-mask {
+  height: 100vh !important;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: transparent;
+}
+
+.modal-main {
+  position: relative;
+  background: white;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.display-block {
+  display: block;
+  height: fit-content;
+  animation: open .2s ease-in;
+}
+
+.display-none {
+  display: none;
+}
+
+@keyframes open {
+  0% {
+    transform: scaleY(0) rotate(0deg);
+  }
+  100% {
+    transform: scaleY(1) rotate(0.1deg);
+  }
+}

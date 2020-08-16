@@ -1,0 +1,47 @@
+.circle-btn {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  background: #383838;
+  transition: width 1s;
+  .smiley-icon {
+    font-size: 1.5em;
+    color: rgb(231, 238, 56);
+    padding: 0.5em;
+    visibility: visible;
+  }
+  .content {
+    color: white;
+    font-weight: bold;
+    width: 0px;
+    overflow: hidden;
+  }
+}
+
+.circle-btn:hover {
+  width: 200px;
+  .smiley-icon {
+    visibility: hidden;
+  }
+  .content {
+    width: 100%;
+    display: block;
+    padding-right: 1em;
+    margin: auto;
+    overflow: hidden;
+    animation: 2s slide-right;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -250px;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
